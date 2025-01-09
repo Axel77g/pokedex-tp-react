@@ -5,7 +5,6 @@ import {memo, useRef} from "react";
 function SearchBar({}){
     const searchContext = usePokemonSearchContext();
     const cooldown = useRef(null);
-    console.log("searchBar")
     function handleInput(event){
         if(cooldown.current){
             clearTimeout(cooldown.current)

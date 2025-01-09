@@ -43,19 +43,16 @@ function pokemonSearchContextValue(){
     return {
         search,
         setSearch(...args){
-            console.log('setSearch')
             redirect()
             _setSearch(...args)
         },
         typeId,
         setTypeId(...args){
-            console.log('setTypeId')
             redirect()
             _setTypeId(...args)
         },
         limit,
         setLimit(...args){
-            console.log('setLimit')
             redirect()
             _setLimit(...args)
         },

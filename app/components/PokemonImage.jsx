@@ -3,7 +3,7 @@ import {useState} from "react";
 export function PokemonImage({pokemon, className = ''}) {
     const [loaded,setLoaded] = useState(false);
     return <div className={'relative flex justify-center items-center'}>
-        <img onLoad={()=>setLoaded(true)} src={pokemon.image} alt={pokemon.name} className={className}/>
+        <img loading={'lazy'} onLoad={()=>setLoaded(true)} src={pokemon.image} alt={pokemon.name} className={className}/>
         {
             loaded
             &&
